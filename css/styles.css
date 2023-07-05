@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    
+    background-image: url("../images/bg-desktop.svg");
+    background-color:var(--violet) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+:root{
+    --violet:hsl(257, 40%, 49%);
+    --soft-magenta:hsl(300, 69%, 71%);
+}
+.Poppins{
+    font-family: 'Poppins', sans-serif;
+}
+main{
+    position:relative;
+}
+.open-sea{
+    font-family: 'Spicemen',sans-serif;
+}
+.logo img{
+    position: relative;
+    top:2.4rem;
+    left:6.25rem;
+}
+section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    flex-direction: row;
+    padding-top: 85px;
+}
+section .right-side{
+    max-width: 500px;
+    
+}
+section .right-side h1{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size:2.5em;
+    padding-block: 0.75rem;
+}
+section .right-side p{
+    color: white;
+    padding-block: 0.75rem;
+    font-size: 1rem;
+    line-height: 20px;
+    
+}
+
+button{
+    padding: 20px;
+    color: var(--violet);
+    border-radius: 25px;
+    padding: 8px 30px 8px 30px;
+    font-size: 1.5em;
+}
+.icons{
+display: flex;
+justify-content:end;
+gap: 40px;
+padding-right: 30px;
+padding-bottom: 25px;
+}
+.icon{
+    font-size: 30px;
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 12px;
+
+}
+@media screen and (max-width: 376px) {
+    section{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        flex-direction: column;  
+        text-align: center;
+        padding-block: 20px;
+        height: 100%;
+    }
+    .left-side img{
+        width: 350px;
+    }
+    .right-side{
+        width: 350px;
+    }
+    .icons{
+        display: flex;
+        justify-content:center;
+         
+        gap: 40px;
+        
+        }
+        .logo{
+            padding-block: 10px;
+        }
+    .logo  img{
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    section .right-side h1{
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        font-size:2em;
+        padding-block: 0.75rem;
+    }
+    button{
+        padding: 20px;
+        color: var(--violet);
+        border-radius: 25px;
+        padding: 8px 80px 8px 80px;
+        font-size: 1.5em;
+    }
+    section .right-side{
+        max-width: 500px;
+        padding-block: 20px;
+    }
+  }
+
